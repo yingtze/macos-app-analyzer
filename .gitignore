@@ -1,0 +1,61 @@
+# =============================================================================
+#  .gitignore — macOS App Analyzer & Caveat Generator
+# =============================================================================
+
+# ── Generated output files (never commit these) ───────────────────────────────
+app_report.txt
+restore_caveats.sh
+
+# ── macOS system junk ─────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+
+# ── Thumbnails ────────────────────────────────────────────────────────────────
+ehthumbs.db
+Thumbs.db
+
+# ── Editor & IDE files ────────────────────────────────────────────────────────
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains (IntelliJ, WebStorm, etc.)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+\#*\#
+.\#*
+
+# ── Temporary & log files ─────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+*.orig
+
+# ── Shell script test artifacts ───────────────────────────────────────────────
+test_output/
+sandbox/
+scratch/
+
+# ── Environment / secrets (just in case) ─────────────────────────────────────
+.env
+.env.*
+*.pem
+*.key
